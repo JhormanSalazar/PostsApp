@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jhorman Salazar" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="App to post and get tasks whit Http requests."
+    />
+    <link rel="stylesheet" href="../css/index-styles.css" />
+    <title>MorApp</title>
+  </head>
+  <body>
+    <main class="main-content">
+        <section id="new-post">
+            <form>
+              <div class="form-control">
+                <label for="title">Title</label>
+                <input type="text" id="title" />
+              </div>
+              <div class="form-control">
+                <label for="content">Content</label>
+                <textarea rows="3" id="content"></textarea>
+              </div>
+              <button type="submit">POST Content</button>
+            </form>
+          </section>
+        
+          <section id="available-posts">
+            <button>GET Content</button>
+            <section id="posts-container" class="posts"></section>
+          </section>
+    </main>
+
+    <script src="../js/script1.js"></script>
+  </body>
+</html>
